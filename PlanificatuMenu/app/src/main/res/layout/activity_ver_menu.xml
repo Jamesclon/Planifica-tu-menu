@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerMenu">
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:background="#B9B6BD"
+            android:text="MENÚ XX"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textViewPrimeroViernes"
+                            android:layout_width="180sp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            android:text="primer plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewViernes" />
+
+                        <TextView
+                            android:id="@+id/textViewJueves"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jueves"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSegundoMiercoles" />
+
+                        <TextView
+                            android:id="@+id/textViewMartes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Martes"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSegundoLunes" />
+
+                        <TextView
+                            android:id="@+id/textViewSegundoLunes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            android:text="segundo plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPrimeroLunes" />
+
+                        <TextView
+                            android:id="@+id/textViewSegundoMiercoles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="segundo plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPrimeroMiercoles" />
+
+                        <TextView
+                            android:id="@+id/textViewMiercoles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Miercoles"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSegundoMartes" />
+
+                        <TextView
+                            android:id="@+id/textViewSegundoViernes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="segundo plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPrimeroViernes" />
+
+                        <TextView
+                            android:id="@+id/textViewViernes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Viernes"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSegundoJueves" />
+
+                        <TextView
+                            android:id="@+id/textViewPrimeroMiercoles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="primer plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewMiercoles" />
+
+                        <TextView
+                            android:id="@+id/textViewSegundoSabado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="segundo plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPrimeroSabado" />
+
+                        <TextView
+                            android:id="@+id/textViewSegundoDomingo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="segundo plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPrimeroDomingo" />
+
+                        <TextView
+                            android:id="@+id/textViewLunes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Lunes"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textViewPrimeroJueves"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="primer plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewJueves" />
+
+                        <TextView
+                            android:id="@+id/textViewSabado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sabado"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSegundoViernes" />
+
+                        <TextView
+                            android:id="@+id/textViewPrimeroMartes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            android:text="primer plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewMartes" />
+
+                        <TextView
+                            android:id="@+id/textViewPrimeroSabado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="primer plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSabado" />
+
+                        <TextView
+                            android:id="@+id/textViewSegundoMartes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            android:text="segundo plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPrimeroMartes" />
+
+                        <TextView
+                            android:id="@+id/textViewPrimeroDomingo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="primer plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewDomingo" />
+
+                        <TextView
+                            android:id="@+id/textViewDomingo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Domingo"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewSegundoSabado" />
+
+                        <TextView
+                            android:id="@+id/textViewSegundoJueves"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="segundo plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewPrimeroJueves" />
+
+                        <TextView
+                            android:id="@+id/textViewPrimeroLunes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:minHeight="48dp"
+                            android:text="primer plato xx"
+                            android:textAlignment="center"
+                            android:textSize="24sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textViewLunes" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:onClick="Aceptar"
+            android:text="Aceptar"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

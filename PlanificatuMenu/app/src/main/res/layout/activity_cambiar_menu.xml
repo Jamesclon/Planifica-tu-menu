@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CambiarMenu">
+
+    <TextView
+        android:id="@+id/textViewCambiarTitulo"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#B9B6BD"
+        android:text="CAMBIAR MENÚ"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCambiarPrimerTitulo"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Primer Plato"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCambiarTitulo" />
+
+    <TextView
+        android:id="@+id/textViewCambiarSegundoTitulo"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Segundo Plato"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCambiarVerPrimer" />
+
+    <Button
+        android:id="@+id/buttonCambiarPrimer"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cambiar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCambiarPrimerTitulo" />
+
+    <Button
+        android:id="@+id/buttonCambiarSegundo"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cambiar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCambiarSegundoTitulo" />
+
+    <Button
+        android:id="@+id/buttonCambiarVerPrimer"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ver"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCambiarPrimer" />
+
+    <Button
+        android:id="@+id/buttonCambiarVerSegundo"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ver"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCambiarSegundo" />
+
+    <Button
+        android:id="@+id/buttonCambiarAceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="Aceptar"
+        android:text="Aceptar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPrimerPlato"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Primer Plato XX"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCambiarPrimerTitulo" />
+
+    <TextView
+        android:id="@+id/textViewSegundoPlato"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Primer Plato XX"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCambiarSegundoTitulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
