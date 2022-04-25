@@ -6,163 +6,359 @@
     android:layout_height="match_parent"
     tools:context=".ComprobarMenu">
 
-    <TextView
-        android:id="@+id/textViewComprobarTitulo"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="#B9B6BD"
-        android:text="MENÚ"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-
-    <ScrollView
-        android:layout_width="300sp"
-        android:layout_height="400dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewComprobarTitulo">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <TextView
+            android:id="@+id/textViewComprobarTitulo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="#B9B6BD"
+            android:text="@string/textViewComprobarTitulo"
+            android:textAlignment="center"
+            android:textSize="34sp" />
 
-            <TextView
-                android:id="@+id/textViewComprobarLunes"
-                android:layout_width="150sp"
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewComprobarLunes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:minHeight="48dp"
+                    android:onClick="Lunes"
+                    android:text="@string/textViewComprobarLunes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarLunesPlatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Lunes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarLunesPlatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Lunes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarMartes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:minHeight="48dp"
+                    android:onClick="Martes"
+                    android:text="@string/textViewComprobarMartes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarMartesPlatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Martes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarMartesPlatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Martes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarMiercoles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:minHeight="48dp"
+                    android:onClick="Miercoles"
+                    android:text="@string/textViewComprobarMiercoles"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarMiercolesPlatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Miercoles"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarMiercolesPlatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Miercoles"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarJueves"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:minHeight="48dp"
+                    android:onClick="Jueves"
+                    android:text="@string/textViewComprobarJueves"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarJuevesPlatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Jueves"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarJuevesPlatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Jueves"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarViernes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:minHeight="48dp"
+                    android:onClick="Viernes"
+                    android:text="@string/textViewComprobarViernes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarViernesPlatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Viernes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarViernesPlatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Viernes"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarSabado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:minHeight="48dp"
+                    android:onClick="Sabado"
+                    android:text="@string/textViewComprobarSabado"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarSabadoPlatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Sabado"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarSabadoPlatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Sabado"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarDomingo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:drawableRight="@android:drawable/ic_menu_search"
+                    android:minHeight="48dp"
+                    android:onClick="Domingo"
+                    android:text="@string/textViewComprobarDomingo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarDomingoPlatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Domingo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewComprobarDomingoPlatos2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="#3301579B"
+                    android:clickable="true"
+                    android:drawableStart="@android:drawable/ic_menu_add"
+                    android:minHeight="48dp"
+                    android:onClick="Domingo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <Button
+                android:id="@+id/buttonComprobarVolver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:clickable="true"
-                android:minHeight="48dp"
-                android:onClick="Lunes"
-                android:text="Lunes"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#724f65"
+                android:onClick="Volver"
+                android:text="@string/buttonComprobarVolver"
+                android:textSize="20sp"
+                app:icon="@android:drawable/ic_media_previous" />
 
-            <TextView
-                android:id="@+id/textViewComprobarMartes"
-                android:layout_width="150sp"
+            <Button
+                android:id="@+id/buttonComprobarAceptar"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:clickable="true"
-                android:minHeight="48dp"
-                android:onClick="Martes"
-                android:text="Martes"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewComprobarLunes" />
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#724f65"
+                android:onClick="Aceptar"
+                android:text="@string/buttonComprobarAceptar"
+                android:textSize="20sp"
+                app:icon="@android:drawable/ic_media_play" />
 
-            <TextView
-                android:id="@+id/textViewComprobarMiercoles"
-                android:layout_width="150sp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:clickable="true"
-                android:minHeight="48dp"
-                android:onClick="Miercoles"
-                android:text="Miercoles"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewComprobarMartes" />
+        </LinearLayout>
 
-            <TextView
-                android:id="@+id/textViewComprobarJueves"
-                android:layout_width="150sp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:clickable="true"
-                android:minHeight="48dp"
-                android:onClick="Jueves"
-                android:text="Jueves"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewComprobarMiercoles" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/textViewComprobarViernes"
-                android:layout_width="150sp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:clickable="true"
-                android:minHeight="48dp"
-                android:onClick="Viernes"
-                android:text="Viernes"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewComprobarJueves" />
 
-            <TextView
-                android:id="@+id/textViewComprobarSabado"
-                android:layout_width="150sp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:clickable="true"
-                android:minHeight="48dp"
-                android:onClick="Sabado"
-                android:text="Sábado"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewComprobarViernes" />
-
-            <TextView
-                android:id="@+id/textViewComprobarDomingo"
-                android:layout_width="150sp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:clickable="true"
-                android:minHeight="48dp"
-                android:onClick="Domingo"
-                android:text="Domingo"
-                android:textAlignment="center"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewComprobarSabado" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-
-    <Button
-        android:id="@+id/buttonComprobarAceptar"
-        android:layout_width="180sp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="40dp"
-        android:onClick="Aceptar"
-        android:text="Aceptar"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonComprobarVolver"
-        android:layout_width="180sp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="40dp"
-        android:onClick="Volver"
-        android:text="Volver"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
-        app:layout_constraintStart_toEndOf="@+id/buttonComprobarAceptar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

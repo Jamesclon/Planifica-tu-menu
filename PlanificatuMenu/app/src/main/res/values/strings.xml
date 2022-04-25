@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">Planifica tu Menu</string>
+    <string name="textViewHistorialTitulo">HISTORIAL</string>
+    <string name="textViewHistorialLunesTitulo">LUNES</string>
+    <string name="textViewHistorialMartesTitulo">MARTES</string>
+    <string name="textViewHistorialMiercolesTitulo">MIERCOLES</string>
+    <string name="textViewHistorialJuevesTitulo">JUEVES</string>
+    <string name="textViewHistorialViernesTitulo">VIERNES</string>
+    <string name="textViewHistorialSabadoTitulo">SABADO</string>
+    <string name="textViewHistorialDomingoTitulo">DOMINGO</string>
+    <string name="buttonHistorialDialogoHistorial">historial</string>
+    <string name="buttonHistorialVolver">Volver</string>
+    <string name="textViewMainTitulo1">Planifica tu Menú</string>
+    <string name="textViewMainTitulo2">GRATIS</string>
+    <string name="buttonMainHistorial">HISTORIAL</string>
+    <string name="buttonMainNuevo">CREAR NUEVO</string>
+    <string name="buttonMainSalir">SALIR</string>
+    <string name="imageView">TITULO</string>
+    <string name="textViewNuevoTitulo">NUEVO</string>
+    <string name="textViewNuevoDiasCarne">Días carne</string>
+    <string name="textViewNuevoDiasPescado">Días pescado</string>
+    <string name="textViewNuevoMenuVegano">Menú vegano</string>
+    <string name="textViewNuevoAlimentosEvitar">Alimentos a evitar</string>
+    <string name="textViewNuevoComensales">Número comensales</string>
+    <string name="buttonNuevoCrear">Crear</string>
+    <string name="buttonNuevoVolver">Volver</string>
+    <string name="textViewComprobarTitulo">MENÚ</string>
+    <string name="textViewComprobarLunes">Lunes</string>
+    <string name="textViewComprobarMartes">Martes</string>
+    <string name="textViewComprobarMiercoles">Miercoles</string>
+    <string name="textViewComprobarJueves">Jueves</string>
+    <string name="textViewComprobarViernes">Viernes</string>
+    <string name="textViewComprobarSabado">Sábado</string>
+    <string name="textViewComprobarDomingo">Domingo</string>
+    <string name="buttonComprobarAceptar">Aceptar</string>
+    <string name="buttonComprobarVolver">Volver</string>
+    <string name="textViewCambiarTitulo">CAMBIAR MENÚ</string>
+    <string name="textViewCambiarPrimerTitulo">Primer Plato</string>
+    <string name="textViewCambiarPrimerPlato">Primer Plato</string>
+    <string name="buttonCambiarPrimer">Cambiar</string>
+    <string name="buttonCambiarVerPrimer">Ingredientes</string>
+    <string name="textViewCambiarSegundoTitulo">Segundo Plato</string>
+    <string name="textViewCambiarSegundoPlato">Segundo Plato</string>
+    <string name="buttonCambiarSegundo">Cambiar</string>
+    <string name="buttonCambiarVerSegundo">Ingredientes</string>
+    <string name="buttonCambiarAceptar">Aceptar</string>
+    <string name="buttonNuevoInfo">Info</string>
+    <string name="buttonLimpiarBD">Borrar</string>
+
+
+
 </resources>

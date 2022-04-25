@@ -10,10 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlanificaTuMenu">
         <activity
-            android:name=".VerMenu"
-            android:screenOrientation="portrait"
-            android:exported="false" />
-        <activity
             android:name=".CambiarMenu"
             android:screenOrientation="portrait"
             android:exported="false" />

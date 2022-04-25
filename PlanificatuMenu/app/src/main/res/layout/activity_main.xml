@@ -6,102 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewMainTitulo1"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:background="#B9B6BD"
-        android:text="Planifica tu Menú"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
-
-    <TextView
-        android:id="@+id/textViewMainTitulo2"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:background="#B9B6BD"
-        android:text="GRATIS"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
-
-    <Button
-        android:id="@+id/buttonMainNuevo"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#724f65"
-        android:onClick="Nuevo"
-        android:text="CREAR NUEVO"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMainTitulo2"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/buttonMainHistorial"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#724f65"
-        android:onClick="Historial"
-        android:text="HISTORIAL"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMainNuevo"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textViewMainTitulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9B6BD"
+            android:text="@string/textViewMainTitulo1"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/buttonMainSalir"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#724f65"
-        android:onClick="Salir"
-        android:text="SALIR"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMainHistorial"
-        app:layout_constraintVertical_bias="0.735" />
+        <TextView
+            android:id="@+id/textViewMainTitulo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9B6BD"
+            android:text="@string/textViewMainTitulo2"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="256dp"
-        android:layout_marginTop="1dp"
-        android:background="#E9F4FA"
-        android:backgroundTint="#E9F4FA"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMainNuevo"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:contentDescription="@string/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMainTitulo2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonMainHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#724f65"
+            android:onClick="Historial"
+            android:text="@string/buttonMainHistorial"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:icon="?android:attr/actionModeFindDrawable" />
+
+        <Button
+            android:id="@+id/buttonMainNuevo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#724f65"
+            android:onClick="Nuevo"
+            android:text="@string/buttonMainNuevo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:icon="@android:drawable/btn_star_big_on" />
+
+        <Button
+            android:id="@+id/buttonMainSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#724f65"
+            android:onClick="Salir"
+            android:text="@string/buttonMainSalir"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:icon="@android:drawable/ic_menu_set_as" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

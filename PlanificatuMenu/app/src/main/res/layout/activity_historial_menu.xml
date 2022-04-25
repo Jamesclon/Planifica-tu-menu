@@ -6,95 +6,263 @@
     android:layout_height="match_parent"
     tools:context=".HistorialMenu">
 
-    <TextView
-        android:id="@+id/textViewHistorialTitulo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="#B9B6BD"
-        android:text="HISTORIAL"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="350dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="21dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHistorialTitulo">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewHistorialTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.5"
+            android:background="#B9B6BD"
+            android:text="@string/textViewHistorialTitulo"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonHistorialDialogoHistorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="3"
+                    android:backgroundTint="#724f65"
+                    android:onClick="dialogHistorial"
+                    android:text="@string/buttonHistorialDialogoHistorial"
+                    android:textSize="24sp"
+                    app:icon="@android:drawable/arrow_down_float" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialTituloMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialLunesTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33FF8A80"
+                    android:text="@string/textViewHistorialLunesTitulo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialLunesPrimero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialLunesSegundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialMartesTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33FF8A80"
+                    android:text="@string/textViewHistorialMartesTitulo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialMartesPrimero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialMartesSegundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialMiercolesTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33FF8A80"
+                    android:text="@string/textViewHistorialMiercolesTitulo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialMiercolesPrimero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialMiercolesSegundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialJuevesTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33FF8A80"
+                    android:text="@string/textViewHistorialJuevesTitulo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialJuevesPrimero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialJuevesSegundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialViernesTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33FF8A80"
+                    android:text="@string/textViewHistorialViernesTitulo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialViernesPrimero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialViernesSegundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialSabadoTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33FF8A80"
+                    android:text="@string/textViewHistorialSabadoTitulo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialSabadoPrimero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialSabadoSegundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialDomingoTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#33FF8A80"
+                    android:text="@string/textViewHistorialDomingoTitulo"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialDomingoPrimero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewHistorialDomingoSegundo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3301579B"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
 
-            <TextView
-                android:id="@+id/textViewPruebaMenu1"
+            <Button
+                android:id="@+id/buttonHistorialVolver"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Prueba Menú 1"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textViewPruebaMenu2"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Prueba Menú 2"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textViewPruebaMenu3"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Prueba Menú 3"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textViewPruebaMenu4"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Prueba Menú 4"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textViewPruebaMenu5"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Prueba Menú 5"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/textViewPruebaMenu6"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="Prueba Menú 6"
-                android:textAlignment="center"
-                android:textSize="24sp" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="3"
+                android:backgroundTint="#724f65"
+                android:onClick="Volver"
+                android:text="@string/buttonHistorialVolver"
+                android:textSize="24sp"
+                app:icon="@android:drawable/ic_media_previous" />
 
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonHistorialVolver"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:onClick="Volver"
-        android:text="Volver"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
