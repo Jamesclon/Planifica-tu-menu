@@ -2,6 +2,7 @@ package com.example.planificatumenu;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,13 +12,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import java.sql.Date;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 
 public class HistorialMenu extends AppCompatActivity {
@@ -28,7 +27,7 @@ public class HistorialMenu extends AppCompatActivity {
     private TextView tvDomingoPrimero, tvDomingoSegundo;
     private List<String> arrayListHistorial = new ArrayList<>();
     private List<String> arrayListHistorialID = new ArrayList<>();
-    private String id, getId;
+    private String id, obtenerID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,9 +54,9 @@ public class HistorialMenu extends AppCompatActivity {
         leerTablaHistorial();
 
         //Si venimos del Activity ComprobarMenu, recuperamos ese menú
-        getId = getIntent().getStringExtra("id");
-        if(!(getId == null)){
-            escribirMenusSemana(getId);
+        obtenerID = getIntent().getStringExtra("id");
+        if(!(obtenerID == null)){
+            escribirMenusSemana(obtenerID);
         }
 
     }
@@ -141,6 +140,43 @@ public class HistorialMenu extends AppCompatActivity {
             tvDomingoPrimero.setText(leerTabla.getString(13));
             tvDomingoSegundo.setText(leerTabla.getString(14));
         }
+
+    }
+
+
+    // Método que permite leer un archivo.txt con las elaboraciones del plato
+    public void leerArchivo(View view){
+        //Creamos las variables necesarias
+        String texto = "Debe seleccionar un plato del historial previamente.";
+        String fichero = "";
+        //Para conocer el archivo que debemos buscar, obtenemos
+        //el nombre de la receta del textview
+        TextView tv = (TextView) findViewById(view.getId());
+        fichero = (String) tv.getText();
+        //Una vez tenemos el nombre del fichero lo leemos
+        try {
+            InputStream is = getAssets().open(fichero);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            texto = new String(buffer);
+        } catch (IOException e){
+            System.out.println("Fallo de lectura del archivo "+fichero);
+        }
+        //Y se lo pasamos al elemento en pantalla
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle(tv.getText().toString().toUpperCase(Locale.ROOT))
+            .setMessage(texto)
+               .setPositiveButton("Volver", new DialogInterface.OnClickListener() {
+                   @Override
+                   public void onClick(DialogInterface dialogInterface, int i) {
+                       dialogInterface.dismiss();
+                   }
+               });
+        dialog.show();
+
 
     }
 

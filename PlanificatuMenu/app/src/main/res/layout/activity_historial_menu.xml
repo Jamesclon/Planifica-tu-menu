@@ -78,16 +78,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialLunesSegundo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialMartesTitulo"
@@ -103,16 +107,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialMartesSegundo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialMiercolesTitulo"
@@ -128,22 +136,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialMiercolesSegundo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialJuevesTitulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#33FF8A80"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:text="@string/textViewHistorialJuevesTitulo"
                     android:textAlignment="center"
                     android:textSize="20sp" />
@@ -153,16 +167,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialJuevesSegundo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialViernesTitulo"
@@ -178,16 +196,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialViernesSegundo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialSabadoTitulo"
@@ -203,16 +225,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialSabadoSegundo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialDomingoTitulo"
@@ -228,16 +254,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textViewHistorialDomingoSegundo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3301579B"
+                    android:clickable="true"
+                    android:onClick="leerArchivo"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="24sp" />
 
             </LinearLayout>
         </ScrollView>
